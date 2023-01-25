@@ -1,0 +1,399 @@
+/* ----------------------------- */
+/* --------GENERAL-------------- */
+/* ----------------------------- */
+
+body {
+  background-color: white;
+  font-family: "Trip Sans", sans-serif;
+}
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+/*  */
+
+/* ----------------------------- */
+/* --------HEADER--------------- */
+/* ----------------------------- */
+
+header {
+  width: 100vw;
+  background-color: #fff;
+  height: 40px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  padding: 10px 0px;
+  /* border: red solid 1px; */
+}
+.logo {
+  width: 190px;
+  height: 40px;
+}
+.topinfos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topinfos ul {
+  display: flex;
+}
+
+.topinfos li {
+  margin-left: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.blackBox {
+  /* border: red solid 1px; */
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+}
+.hoverGrey {
+  width: 90px;
+  text-align: center;
+}
+
+.blackBox:hover {
+  background-color: rgb(36, 36, 36);
+  /* text-decoration: underline; */
+  cursor: pointer;
+}
+
+.hoverGrey:hover {
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  /* text-decoration: underline; */
+  cursor: pointer;
+}
+
+/* ----------------------------- */
+/* --------MAIN----------------- */
+/* ----------------------------- */
+
+h1 {
+  font-size: 54px;
+  line-height: 65px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h1 span {
+  color: #ff5e5e;
+}
+
+.littleSentence {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.littleSentence span {
+  text-decoration: underline;
+}
+
+.littleSentence span:hover {
+  cursor: pointer;
+}
+
+/*! NAVIGATION */
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigate li {
+  width: 181px;
+  height: 68px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 11px 16px;
+  box-sizing: border-box;
+  border: black solid 1px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.navigate li:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+/*! PHOTOS -----------------------*/
+
+section.photos > img {
+  width: 650px;
+  height: 425px;
+}
+
+.photos ul img {
+  width: 476px;
+  height: 211.5px;
+}
+
+.photos ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+  /* border: red solid 1px; */
+}
+
+.photos div {
+  font-size: 12px;
+  line-height: 30px;
+  display: flex;
+  position: absolute;
+  margin: 15px;
+  align-self: flex-end;
+  width: 130px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+.photos div i {
+  margin-left: 12px;
+}
+/* hovering --------------------------*/
+
+.photos div:hover {
+  cursor: pointer;
+  background-color: rgb(36, 36, 36);
+  opacity: 1;
+}
+
+.photos > img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.photos ul img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/** emplacement ----------*/
+
+.emplacement {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.emplacement span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* SECOND PART ----------------------------- */
+
+h2 {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+.secondpart h2 {
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 580px;
+}
+
+.description p {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.map {
+  width: 350px;
+  height: 388px;
+  /* border: red solid 1px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 20px; */
+}
+
+/* ! POURQUOI BORDRR MARCHE PAS SUR TOUT ICI */
+
+.map div {
+  /* border: black 1px solid; */
+  height: 50%;
+  width: 100%;
+  background-color: #fe5e5e;
+  padding: 15px;
+  box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.map img {
+  /* border: blue 1px solid; */
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.map h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+.map p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.secondpart {
+  display: flex;
+  /* border: red solid 1px; */
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* THIRDPART ------------------------ */
+/* ---------------------------------- */
+
+.thirdpart h2 {
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.column1 {
+  /* border: pink 1px solid; */
+  /* box-sizing: border-box; */
+  width: 20%;
+  height: 100%px;
+}
+
+.column1 div {
+  margin-bottom: 15px;
+}
+
+.thirdpart ul img {
+  width: 270px;
+  height: 200px;
+}
+
+.caroussel li {
+  display: flex;
+  flex-direction: column;
+  /* border: red 1px solid; */
+}
+
+.carouss {
+  display: flex;
+  /* border: blue 1px solid; */
+  justify-content: space-between;
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+  /* gap: 30px; */
+}
+
+.caroussel {
+  width: 840px;
+  display: flex;
+  gap: 15px;
+  /* border: black solid 1px; */
+  overflow-x: scroll;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carouss ul .titre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.carouss ul .note {
+  margin-bottom: 10px;
+  color: greenyellow;
+}
+
+.carouss ul .note span {
+  font-size: 12px;
+  color: grey;
+}
+
+.thirdpart li {
+  position: relative;
+}
+
+.thirdpart li > i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.carouss ul .explication {
+  color: grey;
+}
+
+.column1 a {
+  color: grey;
+}
+
+/* --------------------------------- */
+/* -----------FOOTER---------------- */
+/* --------------------------------- */
+
+footer > div {
+  margin-top: 50px;
+  height: 80px;
+  /* width: auto; */
+  background-color: #faf1ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div img {
+  height: 30px;
+}
+
+footer div a {
+  color: black;
+  text-decoration: none;
+  font-family: "Trip Sans Medium";
+}
