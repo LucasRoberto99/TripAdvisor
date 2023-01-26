@@ -428,12 +428,14 @@ footer div a {
   }
 
   .navigate {
+    flex-direction: column;
     height: 146px;
     flex-wrap: wrap;
   }
 
-  .navigate li {
-    width: 200px;
+  nav.navigate > li {
+    flex: none;
+    width: calc((25% - 8px));
   }
 
   .navigate li.navL {
