@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".form-container").classList.toggle("invisible");
     });
 
+  document.querySelector("#iconeQuiter").addEventListener("click", () => {
+    document.querySelector(".form-container").classList.toggle("invisible");
+  });
+
   document.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
     console.log("submit");
