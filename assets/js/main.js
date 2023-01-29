@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelector("#boutonConnectezVous")
     .addEventListener("click", () => {
-      document.querySelector("form-container").classList.toggle("invisible");
+      //   console.log(document.querySelector(".form-container"));
+      document.querySelector(".form-container").classList.toggle("invisible");
     });
 
   document.querySelector("form").addEventListener("submit", async (event) => {
