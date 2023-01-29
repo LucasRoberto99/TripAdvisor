@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "https://site--formulaireback--fhx5w78hhgzd.code.run/form",
       data
     );
-
+    if (response.data.message === "Queued. Thank you.") {
+      document.querySelector(".form-container").classList.toggle("invisible");
+    }
     console.log(response.data);
   });
 });
