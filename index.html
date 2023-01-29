@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7ab2d4d403.js"
       crossorigin="anonymous"
@@ -17,7 +19,10 @@
   <body>
     <header>
       <div class="container">
-        <section class="topinfos container">
+        <section class="topinfos">
+          <ul>
+            <li class="hideitemS"><i class="fa-solid fa-bars"></i></li>
+          </ul>
           <img
             class="logo"
             src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered (1).svg"
@@ -25,22 +30,28 @@
           />
 
           <ul>
-            <li class="hoverGrey"><i class="fa-solid fa-pen"></i> Avis</li>
-            <li class="hoverGrey">
-              <i class="fa-regular fa-heart"></i> Voyages
+            <li class="hoverGrey itemS">
+              <i class="fa-solid fa-pen"></i><span class="titreM"> Avis</span>
+            </li>
+            <li class="hoverGrey itemS">
+              <i class="fa-regular fa-heart"></i
+              ><span class="titreM"> Voyages</span>
+            </li>
+            <li class="hoverGrey itemS">
+              <i class="fa-regular fa-bell"></i
+              ><span class="titreM"> Alertes</span>
+            </li>
+            <li class="blackBox itemS" id="boutonConnectezVous">
+              Connectez-vous
             </li>
             <li class="hoverGrey">
-              <i class="fa-regular fa-bell"></i> Alertes
-            </li>
-            <li class="blackBox">Connectez-vous</li>
-            <li class="hoverGrey">
-              <i class="fa-solid fa-cart-shopping"></i> Panier
+              <i class="fa-solid fa-cart-shopping"></i
+              ><span class="titreM"> Panier</span>
             </li>
           </ul>
         </section>
       </div>
     </header>
-
     <main class="container">
       <h1><span>Explorez </span>Toulouse</h1>
       <div class="littleSentence">
@@ -274,6 +285,33 @@
         </div>
       </section>
     </main>
+    <div class="form-container invisible">
+      <div class="formulaire">
+        <h5>Formulaire de contact</h5>
+        <form>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Prénom"
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Nom de famille"
+          /><input type="email" name="email" id="email" placeholder="Email" />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Votre message ici..."
+          ></textarea>
+          <button>Envoyer le formulaire</button>
+        </form>
+      </div>
+    </div>
     <footer>
       <div>
         <img
